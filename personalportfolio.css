@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab&display=swap');
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #bb0903;
+    position: fixed;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.nomelogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+.nomelogo > p {
+    font-weight: 900;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: white;
+}
+.navcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 600px;
+}
+.navbar > .navcontent > ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.navbar > .navcontent > ul > li {
+    display: inline;
+}
+.navbar > .navcontent > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 27.5px;
+    padding: 31px;
+    font-family: 'Roboto Slab', serif;
+}
+.navbar > .navcontent > ul > li > a:hover {
+    background-color: white;
+    color: #2C3E50;
+}
+@media (max-width: 1200px) {
+    .navbar {
+        display: flex;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .nomelogo {
+        padding: 10px;
+    }
+    .navcontent {
+        margin-bottom: 20px;
+    }
+    .navbar > .navcontent > ul > li > a {
+        font-size: 25px;
+        padding: 18px;
+    }
+    .navbar > .navcontent > ul > li > a:hover {
+        color: #2C3E50;
+        padding: 18px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    .navbar > .navcontent > ul > li {
+        display: inline;
+        margin-left: 20px;
+    }
+}
+
+.apresentação {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texttitle {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.texttitle > h1 {
+    color: gainsboro;
+    font-size: 100px;
+}
+.texttitle > p {
+    color: rgb(182, 0, 0);
+    font-size: 32px;;
+    font-style: italic;
+}
+.texttitle > h1:hover {
+    color: white;
+}
+.texttitle > p:hover {
+    color:red;
+}
+
+.projects {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+}
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.project {
+  background-color: black;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: #2C3E50;
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 25px;
+  padding: 2rem 0.5rem;
+}
+.projects-grid > a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.boxmostrar {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.botaomostrar {
+  padding: 15px;
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bold;
+  font-size: 22.5px;
+}
+.contact-section {
+  width: 100vw;
+  height: 80vh;
+  background-color: black;
+}
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calltoaction {
+  color: white;
+  text-align: center;
+}
+.callandsocial > .calltoaction > h1 {
+  font-size: 70px
+}
+.calltoaction > p {
+  font-size: 25px;
+  font-style: italic;
+  color: gainsboro;
+  margin-top: 10px;
+}
+.callandsocial > .socialmedia {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  transform: scale(1.5);
+}
+.callandsocial > .socialmedia > ul > li {
+  display: inline;
+}
+.callandsocial > .socialmedia > ul > li > a {
+  margin-inline: 20px;
+}
+.callandsocial > .socialmedia > ul > li > a:hover {
+  position: relative;
+  top: 1px;
+}
+@media (max-width: 1200px) {
+  .callandsocial > .socialmedia {
+    transform: scale(1.0);
+  }
+  
+  .callandsocial > .socialmedia > ul > li > a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .callandsocial > .calltoaction > h1 {
+    font-size: 50px
+  }
+}
+footer {
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  border-top: 2px solid red;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer > p {
+  color: gainsboro;
+  margin-right: 50px;
+}
